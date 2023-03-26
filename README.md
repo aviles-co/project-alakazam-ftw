@@ -21,7 +21,7 @@ If you just want to get the app running quickly to test it out, first install
 git clone git@github.com:sharetribe/ftw-product.git  # clone this repository
 cd ftw-product/                                      # change to the cloned directory
 yarn install                                         # install dependencies
-yarn run config                                      # add the mandatory env vars to your local config
+create new .env file and copy&paste
 yarn run dev                                         # start the dev server, this will open a browser in localhost:3000
 ```
 
