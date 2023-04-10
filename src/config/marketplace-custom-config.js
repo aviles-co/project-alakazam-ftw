@@ -49,45 +49,13 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
+        { key: 'limited_editions', label: 'Limited Editions'},
         { key: 'figurines', label: 'Figurines' },
         { key: 'trading_cards', label: 'Trading Cards' },
         { key: 'comics_books_manga', label: 'Comics/Books/Manga' },
         { key: 'video_games', label: 'Video Games' },
         { key: 'apparel', label: 'Apparel' },
-      ],
-    },
-  },
-  {
-    id: 'brands',
-    label: 'Top Brands',
-    type: 'SelectMultipleFilter',
-    group: 'secondary',
-    queryParamNames: ['pub_brands'],
-    config: {
-      // Schema type is enum for SelectSingleFilter
-      schemaType: 'enum',
-
-      // "key" is the option you see in Flex Console.
-      // "label" is set here for the UI only.
-      // Note: label is not added through the translation files
-      // to make filter customizations a bit easier.
-      options: [
-        { key: 'funko_pop', label: 'Funko Pop!' },
-        { key: 'hot_toys', label: 'Hot Toys' },
-        { key: 'neca', label: 'NECA' },
-        { key: 'bandai_namco', label: 'Bandai Namco' },
-        { key: 'good_smile_company', label: 'Good Smile Company' },
-        { key: 'kotobukiya', label: 'Kotobukiya' },
-        { key: 'square_enix', label: 'Square Enix' },
-        { key: 'max_factory', label: 'Max Factory' },
-        { key: 'alter', label: 'Alter' },
-        { key: 'megahouse', label: 'Megahouse' },
-        { key: 'banpresto', label: 'Banpresto' },
-        { key: 'diamond_select_toys', label: 'Diamond Select Toys' },
-        { key: 'revoltech', label: 'Revoltech' },
-        { key: 'figma', label: 'Figma' },
-        { key: 'medicom_toy', label: 'Medicom Toy' },
-        { key: 'gundam', label: 'Gundam Gunpla' },
+        { key: 'plush_toys', label: 'Plush Toys'},
       ],
     },
   },
@@ -229,6 +197,40 @@ export const filters = [
     },
   },
   {
+    id: 'brands',
+    label: 'Top Brands',
+    type: 'SelectMultipleFilter',
+    group: 'secondary',
+    queryParamNames: ['pub_brands'],
+    config: {
+      // Schema type is enum for SelectSingleFilter
+      schemaType: 'enum',
+
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'funko_pop', label: 'Funko Pop!' },
+        { key: 'hot_toys', label: 'Hot Toys' },
+        { key: 'neca', label: 'NECA' },
+        { key: 'bandai_namco', label: 'Bandai Namco' },
+        { key: 'good_smile_company', label: 'Good Smile Company' },
+        { key: 'kotobukiya', label: 'Kotobukiya' },
+        { key: 'square_enix', label: 'Square Enix' },
+        { key: 'max_factory', label: 'Max Factory' },
+        { key: 'alter', label: 'Alter' },
+        { key: 'megahouse', label: 'Megahouse' },
+        { key: 'banpresto', label: 'Banpresto' },
+        { key: 'diamond_select_toys', label: 'Diamond Select Toys' },
+        { key: 'revoltech', label: 'Revoltech' },
+        { key: 'figma', label: 'Figma' },
+        { key: 'medicom_toy', label: 'Medicom Toy' },
+        { key: 'gundam', label: 'Gundam Gunpla' },
+      ],
+    },
+  },
+  {
     id: 'all_categories',
     label: 'All Categories',
     type: 'SelectMultipleFilter',
@@ -242,110 +244,40 @@ export const filters = [
       // "label" is set here for the UI only.
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
-      options: [{
-          key: 'figurines',
-          label: 'Figurines'
-      }, {
-          key: 'statues',
-          label: 'Statues'
-      }, {
-          key: 'action_figures',
-          label: 'Action Figures'
-      }, {
-          key: 'plush_toys',
-          label: 'Plush Toys'
-      }, {
-          key: 'prop_replicas',
-          label: 'Prop Replicas'
-      }, {
-          key: 'trading_cards',
-          label: 'Trading Cards'
-      }, {
-          key: 'comics_books_manga',
-          label: 'Comics/Books/Manga'
-      }, {
-          key: 'art_prints',
-          label: 'Art Prints'
-      }, {
-          key: 'posters',
-          label: 'Posters'
-      }, {
-          key: 'video_games',
-          label: 'Video Games'
-      }, {
-          key: 'board_games',
-          label: 'Board Games'
-      }, {
-          key: 'puzzles',
-          label: 'Puzzles'
-      }, {
-          key: 'apparel',
-          label: 'Apparel'
-      }, {
-          key: 't-shirts',
-          label: 'T-Shirts'
-      }, {
-          key: 'hoodies_sweatshirts',
-          label: 'Hoodies/Sweatshirts'
-      }, {
-          key: 'jackets',
-          label: 'Jackets'
-      }, {
-          key: 'hats',
-          label: 'Hats'
-      }, {
-          key: 'socks',
-          label: 'Socks'
-      }, {
-          key: 'accessories',
-          label: 'Accessories'
-      }, {
-          key: 'wallets',
-          label: 'Wallets'
-      }, {
-          key: 'backpacks',
-          label: 'Backpacks'
-      }, {
-          key: 'pins_badges',
-          label: 'Pins/Badges'
-      }, {
-          key: 'keychains',
-          label: 'Keychains'
-      }, {
-          key: 'lanyards',
-          label: 'Lanyards'
-      }, {
-          key: 'phone_cases',
-          label: 'Phone Cases'
-      }, {
-          key: 'mugs',
-          label: 'Mugs'
-      }, {
-          key: 'drinkware',
-          label: 'Drinkware'
-      }, {
-          key: 'home_decor',
-          label: 'Home Decor'
-      }, {
-          key: 'figures_and_statues',
-          label: 'Figures and Statues'
-      }, {
-          key: 'bedding',
-          label: 'Bedding'
-      }, {
-          key: 'bath_towels',
-          label: 'Bath Towels'
-      }, {
-          key: 'throw_blankets',
-          label: 'Throw Blankets'
-      }, {
-          key: 'ornaments',
-          label: 'Ornaments'
-      }, {
-        key: 'in_game_purchases',
-        label: 'In Game Purchases'
-    }
-    ],
+      options: [
+        { key: 'accessories', label: 'Accessories' },
+        { key: 'apparel', label: 'Apparel' },
+        { key: 'art_prints', label: 'Art Prints' },
+        { key: 'backpacks', label: 'Backpacks' },
+        { key: 'bedding', label: 'Bedding' },
+        { key: 'bath_towels', label: 'Bath Towels' },
+        { key: 'board_games', label: 'Board Games' },
+        { key: 'bundles', label: 'Bundles' },
+        { key: 'comics_books_manga', label: 'Comics/Books/Manga' },
+        { key: 'drinkware', label: 'Drinkware' },
+        { key: 'figurines', label: 'Figurines' },
+        { key: 'home_decor', label: 'Home Decor' },
+        { key: 'hoodies_sweatshirts', label: 'Hoodies/Sweatshirts' },
+        { key: 'in_game_purchases', label: 'In Game Purchases' },
+        { key: 'jackets', label: 'Jackets' },
+        { key: 'keychains', label: 'Keychains' },
+        { key: 'lanyards', label: 'Lanyards' },
+        { key: 'limited_editions', label: 'Limited Editions' },
+        { key: 'model_sets', label: 'Model Sets' },
+        { key: 'ornaments', label: 'Ornaments' },
+        { key: 'phone_cases', label: 'Phone Cases' },
+        { key: 'pins_badges', label: 'Pins/Badges' },
+        { key: 'plush_toys', label: 'Plush Toys' },
+        { key: 'posters_wall_scrolls', label: 'Posters/Wall Scrolls' },
+        { key: 'prop_replicas', label: 'Prop Replicas' },
+        { key: 'puzzles', label: 'Puzzles' },
+        { key: 'socks', label: 'Socks' },
+        { key: 'throw_blankets', label: 'Throw Blankets' },
+        { key: 't-shirts', label: 'T-Shirts' },
+        { key: 'trading_cards', label: 'Trading Cards' },
+        { key: 'video_games', label: 'Video Games' },
+        { key: 'wallets', label: 'Wallets' },
+        ]
     },
   },
   {
