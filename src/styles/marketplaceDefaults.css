@@ -1068,3 +1068,24 @@ textarea {
     margin-top: 32px;
   }
 }
+
+/* temporary, need to add tailwind/scss */
+
+/* for hero on landing page */
+#hero {
+  background-image: url(/src/assets/hero4.jpg);
+}
+@media only screen and (min-width: 1200px) {
+  #hero {
+    background-size: cover;
+    background-position: center;
+  }
+}
+.CustomAppearance_backgroundImageWrapper__BzwmF {
+  display: none;
+}
+#hero .BlockDefault_text__uquKZ {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  border-radius: 1rem;
+}
